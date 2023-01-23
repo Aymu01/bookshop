@@ -1,0 +1,54 @@
+.book{
+    width: 31%;
+    height: 600px;
+    background-color: #fff ;
+    box-shadow: rgb(0 0 0 / 10%) -2px -1px 8px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    border:1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+     transition: border 300ms;
+    &:hover{
+            border: 1px solid #d0021b;
+}
+    
+    img{
+        height: 300px;
+    }
+    
+    h2{
+        font-weight: 500;
+        font-size: 26px;
+    }
+    .bookOther{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #f11840;
+        font-weight: 500;
+       
+    }
+    .price{
+        color: #d0021b;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .cartBtn{
+    width: 60%;
+    padding: 10px ;
+    border-radius: 7px;
+    background-color:#df051e ;
+    border: 1px solid #df051e;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 300ms;
+    &:hover{
+        background-color: darken($color: #df051e, $amount: 10);
+    }
+    }
+}
